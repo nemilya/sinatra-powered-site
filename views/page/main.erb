@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title><%= @title %></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<div id="wrapper">
+
+	<div id="header">
+	  <%= erb :'page/_menu' %>
+		<%= erb :'page/_search_form' %>
+	</div>
+
+	<div id="logo">
+	  <%= erb :'page/_logo' %>
+	</div>
+	<hr />
+
+<div id="page">
+	<div id="content">
+	  <%= yield %>
+	</div>
+
+	<div id="sidebar">
+	  <%= erb :'page/_sidebar' %>
+	</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+
+<div id="footer">
+  <%= erb :'page/_footer' %>
+</div>
+
+</div>
+</body>
+</html>
